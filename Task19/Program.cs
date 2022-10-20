@@ -31,6 +31,9 @@ Console.Write("Введите пятизначное целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 if (number < 10000 || number > 99999) Console.WriteLine("Введено некорректное значение");
+// Есть ли значение (с точки зрения читаемости)
+// куда ставить основной код - в True или False
+// проверки корректности ввода?
 else
 {
     string result = number == Reverse(number) ? "палиндром" : "не палиндром";
